@@ -24,9 +24,8 @@ background-size: 55%;
 background-repeat: no-repeat;
 background-position: right;
 
-
-
 }
+
 .heading{
     margin-top:10%;
     font-size:3rem;
@@ -57,7 +56,7 @@ background-position: right;
     grid-template-columns: 45% 1% auto;
     gap:1%;
     background-image: url("resources/about-img-1.png");
-    background-size: 25%;
+    background-size: 30%;
     
     background-repeat: no-repeat;
     background-position: 7% 5%;
@@ -103,7 +102,7 @@ background-position: right;
 }
 .quote{
     background-image: url("resources/quote-img-1.png");
-    background-size: 55%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -155,9 +154,15 @@ footer {
         display: grid;
         grid-template-columns: 50% auto;
     }
+    .about{
+        background-size: 50vw;
+        background-position-x:-35% ;
+    }
 }
 @media  (max-width: 700px)
 {
+    
+
     .card-layout{
         width:90%;
         margin:auto;
@@ -167,6 +172,22 @@ footer {
         justify-content: space-between;
         margin-top:3%;
     }
+}
+@media (max-width: 600px)
+{
+    .home{
+        
+        background-size: 75%;
+        background-position-x:200% ;
+    
+        }
+        .about{
+            background-size: 90vw;
+            background-position-x:-15em ;
+        }
+        .quote{
+            background-position-x: 50%;
+        }
 }
 @media  (max-width: 550px)
 {
@@ -178,16 +199,6 @@ footer {
     .heading{
         font-size:2rem;
     }
-    .container{
-        padding:1rem;
-        font-size: smaller;
-    margin-top:5rem;
-    margin-bottom: 5rem;
-    }
-}
-
-@media  (max-width: 400px)
-{
     .ribbon{
         width:50%;
         height:2px;
@@ -204,6 +215,18 @@ footer {
         background-position: 7% 5%;
         
     }
+    .container{
+        padding:1rem;
+        font-size: smaller;
+    margin-top:5rem;
+    margin-bottom: 5rem;
+    }
+}
+
+@media  (max-width: 400px)
+{
+    
+    
     .footer{
         display: grid;
         grid-template-columns: 45% 45%;
